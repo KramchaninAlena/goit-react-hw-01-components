@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import css from '../StatisticsSection/StatisticsSection.module.css'
 
 export function StatisticsSection({title, children}) {
@@ -5,4 +6,9 @@ export function StatisticsSection({title, children}) {
     {title && <h2 className={css.title}>{title}</h2>}
     {children}
     </section>
+}
+
+StatisticsSection.propTypes = {
+    title: PropTypes.string,
+    children:PropTypes.node,
 }

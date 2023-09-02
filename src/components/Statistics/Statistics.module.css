@@ -2,22 +2,21 @@
     padding: 0;
     display: flex;
     margin: 0 ;
-    border: 1px solid #000;
     width: 100%;
 }
 
 .item {
     display: flex;
     flex-direction: column;
+    padding: 10px;
     align-items: center;
-    border-right: 1px solid #000; 
-    /* width: 100%; */
+    border-top: 1px solid #2a2a2a;
     flex-basis: calc(100% / 5);
 }
-.item:last-child {
-    border-right: none; 
-  }
 
+.item:not(:last-child) {
+    border-right: 1px solid #2a2a2a;
+}
 .percentage {
     font-size: 30px;
 }
