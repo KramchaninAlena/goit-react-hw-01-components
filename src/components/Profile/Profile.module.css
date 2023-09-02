@@ -1,0 +1,59 @@
+p{
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+  }
+
+.profile{
+    padding: 50px 50px 30px 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+
+    width: 250px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+justify-content: center;
+}
+
+.avatar{
+   width: 200px;
+   margin-bottom: 10px;
+ }
+
+.name{
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.stats{
+    display: flex;
+    padding: 0;
+    margin-top: 30px;
+    margin-bottom: 0;
+    gap: 50px;
+    justify-content: center;
+}
+
+.list{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quantity{
+    font-weight: bold;  
+}

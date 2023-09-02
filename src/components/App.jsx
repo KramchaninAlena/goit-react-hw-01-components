@@ -1,16 +1,22 @@
+import { Profile } from "components/Profile/Profile";
+import user from 'components/Data/user.json'
+import data from 'components/Data/data.json'
+import { Statistics } from "./Statistics/Statistics";
+import { StatisticsSection } from "./StatisticsSection/StatisticsSection";
+
 export const App = () => {
-  return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      hello
-    </div>
-  );
+  return <>
+  <Profile
+  username={user.username}
+  tag={user.tag}
+  location={user.location}
+  avatar={user.avatar}
+  stats={user.stats}
+/>
+<StatisticsSection title="Upload stats">
+  <Statistics stats={data} />
+  </StatisticsSection>
+
+ </>;
 };
+
